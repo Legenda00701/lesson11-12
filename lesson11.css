@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    left: 0;
+    z-index: 100;
+}
+.footer__container{
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+}
+.footer__list{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.footer__icon{
+    width: 100px;
+    margin-right: 20px;
+}
+.footer__icon img{
+    width: 100px;
+    height: 100px;
+}
+.footer__partners{
+    margin-left: 500px;
+}
+.footer__partners .footer__help{
+    margin: 0 20px;
+}
+.ul{
+    list-style-type: none;
+}
+li{
+    font-size: 14px;
+}
+.ul li:hover{
+    cursor: pointer;
+}
+.footer__info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-direction: column;
+}
+.footer__info a{
+    margin: 0 10px;
+    color: #5b5b5b;
+}
+.footer__copyright{
+    margin-left: auto;
+    font-size: 14px;
+    color: #5b5b5b;
+}
+br{
+    color: gray;
+}
+p{
+    font-weight: bold;
+    font-size: 18px;
+}
+.ul li{
+    margin-bottom: 10px;
+    padding: 5px;
+    color: #5b5b5b;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer__container{
+        flex-direction: column;
+    }
+    .footer__partners,
+    .footer__help{
+        margin: 10px 0;
+    }
+    .footer__info{
+        flex-direction: column;
+    }
+    .footer__info a{
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .footer__copyright{
+        margin-top: 10px;
+        width: 100%;
+        font-size: 16px;
+    }
+    p{
+        font-size: 20px;
+    }
+    li{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer__container{
+        flex-direction: column;
+    }
+    .footer__list{
+        flex-direction: column;
+        width: 100%;
+    }
+    .footer__partners,
+    .footer__help{
+        margin: 10px 0;
+    }
+    .footer__info{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer__links{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .footer__info a{
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    .footer__copyright{
+        width: 100%;
+        font-size: 16px;
+    }
+    p{
+        font-size: 20px;
+    }
+    li{
+        font-size: 16px;
+    }
+}
